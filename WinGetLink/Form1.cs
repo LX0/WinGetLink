@@ -44,6 +44,7 @@ namespace WinGetLink
 
             if (string.IsNullOrEmpty(context)) return;
 
+            context += "  ";
             var sps = context.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
             for (int i = sps.Length - 1; i >= 0; i--)
             {
